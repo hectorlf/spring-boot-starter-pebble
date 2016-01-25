@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.hectorlopezfernandez.pebble</groupId>
   <artifactId>spring-boot-starter-pebble</artifactId>
-  <version>0.0.0</version>  
+  <version>0.5.0</version>  
   <packaging>jar</packaging>
   <name>Spring Boot starter for Pebble Template Engine</name>
   <description>Spring Boot starter to autoconfigure Pebble Template Engine</description>
@@ -33,9 +33,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.13</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>1.3.2.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -45,9 +45,15 @@
     </dependency>
 
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <groupId>com.mitchellbosecke</groupId>
+      <artifactId>pebble-spring3</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>1.3.2.RELEASE</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
